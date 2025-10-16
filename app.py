@@ -5,7 +5,7 @@ from glob import glob
 from natsort import natsorted
 
 # --- 1. 설정 (Configuration) ---
-IMAGE_DIR = './Reader_Study/TILs_Validation'
+IMAGE_DIR = './images'
 OUTPUT_CSV_PATH = './Reader_Study/tils_validation_results.csv'
 
 # --- 2. 데이터 로딩 및 준비 ---
