@@ -7,7 +7,7 @@ from natsort import natsorted
 # --- 1. 설정 (Configuration) ---
 # HE 이미지 파일만 찾도록 설정합니다.
 IMAGE_DIR = './images'
-OUTPUT_CSV_PATH = './tils_validation_results_he_only.csv'
+OUTPUT_CSV_PATH = './tils_validation_results.csv'
 
 # --- 2. 데이터 로딩 및 준비 ---
 def load_he_images(directory):
@@ -34,7 +34,7 @@ if 'results' not in st.session_state:
 # --- 4. 메인 UI 구성 ---
 # 페이지 레이아웃을 'wide'로 설정하여 넓게 표시합니다.
 st.set_page_config(layout="wide")
-st.title("🔬 TILs Quantification Validation Study (H&E Only)")
+st.title("🔬 TIL count by pathologist")
 
 # 모든 평가가 끝났는지 확인
 if not st.session_state.he_paths:
